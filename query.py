@@ -15,8 +15,12 @@ def list():
 
 def iscast():
 
-def ismoviename():
 
+def ismoviename():
+    checkname=input("enter the movie name: ").lower()
+    for i in range(0, len(movies._movies), 1):
+        if(movies._movies[i]['name'].lower().__contains__(checkname.lower())):
+            print(movies._movies[i]['name'])
 
 x=True
 while x:
