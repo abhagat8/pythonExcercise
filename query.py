@@ -8,8 +8,10 @@ print("sc: Search cast name")
 print("list: list all movies")
 print("q: quit")
 print()
-def list():
 
+def list():
+    for i in range (0, len(movies._movies), 1):
+        print(movies._movies[i]['name'])
 
 def iscast():
 
