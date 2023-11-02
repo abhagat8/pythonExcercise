@@ -1,13 +1,6 @@
 from movies import Movies
 movies = Movies('./movies.txt')
 
-print("menu:")
-print("sn: Search movie name")
-print("sc: Search cast name")
-print("list: list all movies")
-print("q: quit")
-print()
-
 def list():
     for i in range (0, len(movies._movies), 1):
         print(movies._movies[i]['name'])
